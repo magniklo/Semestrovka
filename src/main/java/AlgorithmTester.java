@@ -59,7 +59,7 @@ public class AlgorithmTester {
     private TestResult testBoyerMoore(String text, String pattern) {
         BoyerMooreSearch searcher = new BoyerMooreSearch(pattern);
 
-        // !!!Измеряем время только алгоритма (без учета чтения файла)
+        // !Измеряем время только алгоритма (без учета чтения файла)
         long startTime = System.nanoTime();
         int position = searcher.search(text);
         long endTime = System.nanoTime();
